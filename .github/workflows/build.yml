@@ -55,8 +55,8 @@ env:
   LLAMA_LOG_TIMESTAMPS: 1
 
 jobs:
-  windows-2019-cmake-cuda:
-    runs-on: windows-2019
+  windows-2022-cmake-cuda:
+    runs-on: windows-2022
 
     strategy:
       matrix:
@@ -109,7 +109,7 @@ jobs:
 
   build:
     # Use the same job name and runner as the official project
-    runs-on: windows-2019
+    runs-on: windows-2022
 
     strategy:
       matrix:
